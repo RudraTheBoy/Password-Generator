@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4f8fc51de1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="Password__Container">
+        <div class="Password__header">
+            <div class="Password">
+                <span id="Password"></span>
+                <button id="copy"class="clipboard"><i class="fa-solid fa-clipboard"></i></button>
+            </div>
+        </div>
+        <div class="Password__body">
+            <div class="form-control">
+                <lable for="length" >Password length</lable>
+                <input id="length" type="number" minlength="4" maxlength="16" placeholder="min:4 and max:16">
+            </div>
+            <div class="form-control">
+                <lable for="upper" >Contains uppercase letters</lable>
+                <input id="upper" type="checkbox">
+            </div>
+            <div class="form-control">
+                <lable for="lower">Contains lowercase letters</lable>
+                <input id="lower" type="checkbox">
+            </div>
+            <div class="form-control">
+                <lable for="number">Contains numbers</lable>
+                <input id="number" type="checkbox">
+            </div>
+            <div class="form-control">
+                <lable for="symbol">Contains symbols</lable>
+                <input id="symbol" type="checkbox">
+            </div>
+            <button class="generate" id="generate">Generate Password!</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
